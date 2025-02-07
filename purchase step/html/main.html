@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 리셋 CSS -->
+    <link rel="stylesheet" href="../reset/reset.css" />
+    <!-- CSS 모음 -->
+    <link rel="stylesheet" href="../css/article1.css" />
+    <link rel="stylesheet" href="../css/article2.css" />
+    <link rel="stylesheet" href="../css/country.css" />
+    <link rel="stylesheet" href="../css/midea.css" />
+    <!-- JS 모음 -->
+    <script src="../javascripts/country.js"></script>
+    <script src="../javascripts/date.js"></script>
+    <script src="../javascripts/guest.js"></script>
+    <script src="../javascripts/script.js"></script>
+    <script type="module" src="../javascripts/import.js"></script>
+
+  </head>
+  <body class="container">
+    <!-- 누 -->
+    <!-- <button id="open-guest-modal">hi</button> -->
+
+    <!-- 전체적인 툴을 잡아 봅시다 -->
+      <header>
+        <div class="first-contain">
+          <div class="click-page">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBmaWxsOiBub25lOyBoZWlnaHQ6IDE2cHg7IHdpZHRoOiAxNnB4OyBzdHJva2U6IGN1cnJlbnRjb2xvcjsgc3Ryb2tlLXdpZHRoOiAzOyBvdmVyZmxvdzogdmlzaWJsZTsiPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0yMCAyOCA4LjcgMTYuN2ExIDEgMCAwIDEgMC0xLjRMMjAgNCIvPjwvc3ZnPg==" alt="">
+            
+          </div>
+          <span class="first">확인 및 결재</span>
+        </div>
+        <div class="px-none">
+          <div class="px-click">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBmaWxsOiBub25lOyBoZWlnaHQ6IDE2cHg7IHdpZHRoOiAxNnB4OyBzdHJva2U6IGN1cnJlbnRjb2xvcjsgc3Ryb2tlLXdpZHRoOiAzOyBvdmVyZmxvdzogdmlzaWJsZTsiPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0yMCAyOCA4LjcgMTYuN2ExIDEgMCAwIDEgMC0xLjRMMjAgNCIvPjwvc3ZnPg==" alt="">
+            
+          </div>
+          <div class="px-font">확인 및 결재</div>
+
+        </div>
+      </header>
+      <main>
+        <div class="article-contain">
+          <article class="article1">
+            <section class="section1">
+              <div class="element1-1">
+                <div class="element1-1-1">흔치 않은 기회입니다.</div>
+                <div class="element1-1-2">
+                  Robert님의 숙소는 보통 예약이 가득 차 있습니다.
+                </div>
+              </div>
+              <div class="element1-2">
+                <img
+                  src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNDggNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBoZWlnaHQ6IDMycHg7IHdpZHRoOiAzMnB4OyBmaWxsOiByZ2IoMjI3LCAyOCwgOTUpOyBzdHJva2U6IGN1cnJlbnRjb2xvcjsiPjxnIHN0cm9rZT0ibm9uZSI+PHBhdGggZD0ibTMyLjYyIDYgOS41MjYgMTEuMTE0LTE4LjE0NiAyMy45MjEtMTguMTQ3LTIzLjkyMSA5LjUyNi0xMS4xMTR6IiBmaWxsLW9wYWNpdHk9Ii4yIi8+PHBhdGggZD0ibTM0LjQ1OTkzNDkgMiAxMi44MjQzMTI5IDE0Ljk2MTY5ODMtMjMuMjg0MjQ3OCAzMC42OTI4NzIxLTIzLjI4NDI0Nzc5LTMwLjY5Mjg3MjEgMTIuODI0MzEyODktMTQuOTYxNjk4M3ptLTE3LjkxNzE4MjcgMTZoLTEyLjUyNzk5OTk5bDE4LjI1ODk5OTk5IDI0LjA2OXptMjcuNDQxIDBoLTEyLjUyOGwtNS43MyAyNC4wNjl6bS0xNC41ODMgMGgtMTAuODAybDUuNDAxMjQ3OCAyMi42ODR6bS0xNS45Mi0xMi44Ni05LjMwNzk5OTk5IDEwLjg2aDExLjg5Mzk5OTk5em0xOS4yNTMtMS4xNDFoLTE3LjQ2OGwyLjg1NyAxMi4wMDFoMTEuNzU0em0xLjc4NCAxLjE0MS0yLjU4NiAxMC44NmgxMS44OTR6Ii8+PC9nPjwvc3ZnPg=="
+                  alt=""
+                />
+              </div>
+            </section>
+            <section class="section2">
+              <div class="element2-1">예약정보</div>
+              <div class="element2-2">
+                <div class="element2-2-1">
+                  <span>날짜</span>
+                  <button id="open-date-modal">수정</button>
+                </div>
+                <div id="selected-date">2월19일~2월20일</div>
+              </div>
+              <div class="element2-2">
+                <div class="element2-2-1">
+
+                    <span>인원</span>
+                    <button id="open-guest-modal">수정</button>
+                  </div>
+                  
+                  <div id="guest-count-display">성인 0명</div>
+                
+              </div>
+              </section>
+                <section class="section3">
+                <div class="element3-1">예약하려면 로그인 또는 회원가입 하세요.</div>
+                <div class="country-selector">
+                <input type="text" class="country-input" placeholder="국가를 입력하세요" />
+                <div class="country-list"></div>
+              </div>
+
+              <div class="phone-input-container">
+                
+                <input type="text" class="phone-number-input" placeholder="전화번호를 입력하세요" />
+              </div>
+          
+              <div class="element3-2">
+                전화나 문자로 전화번호를 확인하겠습니다. 일반 문자 메시지 요금 및
+                데이터 요금이 부과됩니다. 개인정보 처리방침
+              </div>
+              <button class="element3-3">계속하기</button>
+              </section>
+              <div class="divider">또는</div>
+              <section class="section4">
+                <section class="element4-1">
+                <button class="element4-1-1">
+                <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBoZWlnaHQ6IDIwcHg7IHdpZHRoOiAyMHB4OyI+PHBhdGggZmlsbD0iIzAzYzc1YSIgZD0iTTE5LjkyIDE2Ljc3IDExLjc2IDVINXYyMmg3LjA4VjE1LjIyTDIwLjI0IDI3SDI3VjVoLTcuMDh6Ii8+PC9zdmc+"
+                alt=""
+                />
+              </button>
+              <button class="element4-1-1">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBoZWlnaHQ6IDIwcHg7IHdpZHRoOiAyMHB4OyI+PHBhdGggZmlsbD0iIzE4NzdGMiIgZD0iTTMyIDB2MzJIMFYweiIvPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0yMi45NCAxNkgxOC41di0zYzAtMS4yNy42Mi0yLjUgMi42LTIuNWgyLjAyVjYuNTZzLTEuODMtLjMxLTMuNTgtLjMxYy0zLjY1IDAtNi4wNCAyLjIxLTYuMDQgNi4yMlYxNkg5LjQ0djQuNjNoNC4wNlYzMmg1VjIwLjYyaDMuNzNsLjctNC42MnoiLz48L3N2Zz4="
+                alt=""
+              />
+              </button>
+              <button class="element4-1-1">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgYXJpYS1oaWRkZW49InRydWUiIHJvbGU9InByZXNlbnRhdGlvbiIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImRpc3BsYXk6IGJsb2NrOyBoZWlnaHQ6IDIwcHg7IHdpZHRoOiAyMHB4OyI+PHBhdGggZmlsbD0iIzQyODVmNCIgZD0iTTI0LjEyIDI1YzIuODItMi42MyA0LjA3LTcgMy4zMi0xMS4xOUgxNi4yNXY0LjYzaDYuMzdBNS4yNiA1LjI2IDAgMCAxIDIwLjI1IDIyeiIvPjxwYXRoIGZpbGw9IiMzNGE4NTMiIGQ9Ik01LjYyIDIxLjMxQTEyIDEyIDAgMCAwIDI0LjEyIDI1bC0zLjg3LTNhNy4xNiA3LjE2IDAgMCAxLTEwLjY5LTMuNzV6Ii8+PHBhdGggZmlsbD0iI2ZiYmMwMiIgZD0iTTkuNTYgMTguMjVjLS41LTEuNTYtLjUtMyAwLTQuNTZsLTMuOTQtMy4wN2ExMi4wOCAxMi4wOCAwIDAgMCAwIDEwLjd6Ii8+PHBhdGggZmlsbD0iI2VhNDMzNSIgZD0iTTkuNTYgMTMuNjljMS4zOC00LjMyIDcuMjUtNi44MiAxMS4xOS0zLjEzbDMuNDQtMy4zN2ExMS44IDExLjggMCAwIDAtMTguNTcgMy40M2wzLjk0IDMuMDd6Ii8+PC9zdmc+"
+                alt=""
+              />
+              </button>
+              <button class="element4-1-1">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQgMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgcm9sZT0icHJlc2VudGF0aW9uIiBhcmlhLWhpZGRlbj0idHJ1ZSIgZm9jdXNhYmxlPSJmYWxzZSIgc3R5bGU9ImhlaWdodDogMjBweDsgd2lkdGg6IDIwcHg7IGRpc3BsYXk6IGJsb2NrOyBmaWxsOiBjdXJyZW50Y29sb3I7Ij48cGF0aCBkPSJtMTMuMyAyLjFhNS4xIDUuMSAwIDAgMSAzLjgtMi4xIDUuMSA1LjEgMCAwIDEgLTEuMiAzLjggNC4xIDQuMSAwIDAgMSAtMy42IDEuNyA0LjUgNC41IDAgMCAxIDEtMy40em0tNSAzLjdjLTIuOCAwLTUuOCAyLjUtNS44IDcuMyAwIDQuOSAzLjUgMTAuOSA2LjMgMTAuOSAxIDAgMi41LTEgNC0xczIuNi45IDQgLjljMy4xIDAgNS4zLTYuNCA1LjMtNi40YTUuMyA1LjMgMCAwIDEgLTMuMi00LjkgNS4yIDUuMiAwIDAgMSAyLjYtNC41IDUuNCA1LjQgMCAwIDAgLTQuNy0yLjRjLTIgMC0zLjUgMS4xLTQuMyAxLjEtLjkgMC0yLjQtMS00LjItMXoiLz48L3N2Zz4="
+                alt=""
+              />
+              </button>
+              </section >
+              <section class="element4-2">
+              <button>이메일로 로그인하기</button>
+
+              </section>
+          
+        
+        
+      </article>
+
+
+
+
+
+
+
+
+
+      <article class="article2">
+        <section class="section5">
+          <div class="section5-1">
+            <img
+              src="https://a0.muscache.com/im/pictures/miso/Hosting-1106434818541152427/original/4d760dda-4343-4334-b646-7c935a9c73f0.jpeg?aki_policy=large"
+              alt=""
+            />
+          </div>
+          <div class="section5-2">
+            <div class="section5-2-1">The Cozzi A Frame</div>
+            <div class="section5-2-2">통나무집 전체</div>
+            <div class="section5-2-3">5.00 (48) </div>
+
+          </div>
+          
+        </section>
+
+
+
+
+
+        <!-- 밑줄 넣어야쥬 -->
+        <section class="section6">
+          <div class="section6-1">요금 세부정보</div>
+          <!-- 밑에는 계속 데이터를 가져와서 로드해야함 -->
+          <div class="section6-1-1"><span>$250000x5박</span><span>1250000원</span></div>
+          <div class="section6-1-2"><span>에어비엔비 서비스 수수료</span><span>190000원</span></div>
+          <div><span></span><span></span></div>
+          <div><span></span><span></span></div>
+          <!-- 여기선 위에 있는 합을 모두 더해야함함 -->
+          <div class="section-sum"><span>총액액</span><span>합이 들어간다다</span></div>
+        </section>
+        <!-- 밑줄 넣어야쥬 -->
+        <section>
+          <!-- 결제방식 선택에 따라 계산 해서 데이터 보내야함 -->
+          <div><span></span><span></span></div>
+          <div><span></span><span></span></div>
+        </section>
+        <!-- 밑줄 넣어야쥬 -->
+        <section class="section7">
+          해외에서 결제가 처리되기 때문에 카드 발행사에서 추가 수수료를 부과할
+          수 있습니다.
+        </section>
+      </article>
+    </div>
+    </main>
+    <!-- 모달 창 -->
+    <div id="date-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <input type="text" id="modal-start-date" placeholder="시작 날짜를 선택하세요">
+          <input type="text" id="modal-end-date" placeholder="종료 날짜를 선택하세요">
+          <button id="modal-save-dates">저장</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

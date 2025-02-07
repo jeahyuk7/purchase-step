@@ -1,0 +1,63 @@
+.px-none {
+  display: none;
+  width: 100%;
+  position: relative;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+}
+
+.px-click {
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+}
+
+.px-click img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .article-contain {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0;
+  }
+
+  .article1 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .article2 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  section {
+    padding: 24px;
+  }
+
+  .element4-1 {
+    margin-left: -24px;
+  }
+
+  .element4-2 {
+    margin-left: -24px;
+  }
+
+  .first-contain {
+    display: none;
+  }
+
+  .section1 {
+    display: none;
+  }
+
+  .px-none {
+    display: flex;
+  }
+}
